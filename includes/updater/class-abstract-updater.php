@@ -8,7 +8,6 @@
 
 namespace WP_Job_Manager_Beta_Tester\Updater;
 
-use WP_Job_Manager_Beta_Tester\Updater\Plugin_Package;
 use WP_Job_Manager_Beta_Tester\Updater\Sources\Source;
 
 if ( ! defined( 'ABSPATH' ) ) {
