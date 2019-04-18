@@ -98,7 +98,7 @@ $current_version = \WP_Job_Manager_Beta_Tester\Updater::instance()->get_current_
 
 	<div class="postbox">
 		<div class="inside" style="margin-bottom:0;">
-			<h2><?php esc_html_e( 'Switch WP Job Manager Version', 'wp-job-manager-beta-tester' ); ?></h2>
+			<h2><?php esc_html_e( 'Switch Version', 'wp-job-manager-beta-tester' ); ?></h2>
 			<?php
 			$confirm_message = esc_html__( 'Are you sure you want to switch your WP Job Manager version? We do not recommend doing this on production sites. Back up first.', 'wp-job-manager-beta-tester' );
 			?>
