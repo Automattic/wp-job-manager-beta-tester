@@ -1,0 +1,39 @@
+sudo: false
+dist: trusty
+language: php
+notifications:
+  email:
+    on_success: never
+    on_failure: never
+branches:
+  only:
+    - master
+cache:
+  directories:
+    - vendor
+    - "$HOME/.composer/cache"
+before_script:
+  - export PLUGIN_BASE_DIR=$(basename $(pwd))
+  - export PLUGIN_SLUG=$(basename $(pwd) | tr '[:upper:]' '[:lower:]')
+  - export PATH="$HOME/.composer/vendor/bin:$HOME/.config/composer/vendor/bin:$PATH"
+  - |
+    if [ -f ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/xdebug.ini ]; then
+      phpenv config-rm xdebug.ini
+    else
+      echo "xdebug.ini does not exist"
+    fi
+  - composer install
+jobs:
+  include:
+    - stage: test
+      php: 7.2
+      script:
+        - ./vendor/bin/phpunit
+    - stage: test
+      php: 7.3
+      script:
+        - ./vendor/bin/phpunit
+    - stage: test
+      php: 7.2
+      script:
+        - ./tests/bin/travis-phpcs.sh

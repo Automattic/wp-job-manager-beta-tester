@@ -1,0 +1,5 @@
+** WP Job Manager Beta Tester Changelog **
+
+1.0.0
+
+* Initial release.

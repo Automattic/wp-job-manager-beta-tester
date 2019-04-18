@@ -1,0 +1,151 @@
+# Copyright (C) 2019 wp-job-manager-beta-tester
+# This file is distributed under the same license as the wp-job-manager-beta-tester package.
+msgid ""
+msgstr ""
+"Project-Id-Version: wp-job-manager-beta-tester\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. translators: %1$s placeholder is minimum PHP version; %2$s is the version of PHP they have installed.
+#: wp-job-manager-beta-tester.php:27
+msgid "WP Job Manager Beta Tester requires a minimum PHP version of %1$s, but you are running %2$s."
+msgstr ""
+
+#: includes/class-admin.php:55
+msgid "Requires WP Job Manager to be installed and activated."
+msgstr ""
+
+#: includes/class-admin.php:105
+msgid "Action failed. Please go back and retry."
+msgstr ""
+
+#. translators: Placeholder is the version the user is trying to switch to.
+#: includes/class-admin.php:125
+msgid "An error occurred while attempting to switch the version to %s"
+msgstr ""
+
+#: includes/class-admin.php:169, includes/class-admin.php:272
+msgid "Settings"
+msgstr ""
+
+#: includes/class-admin.php:176
+msgid "Release Channel"
+msgstr ""
+
+#: includes/class-admin.php:193
+msgid "The following settings allow you to choose which WP Job Manager updates to receive on this site, including beta and RC versions not quite ready for production deployment."
+msgstr ""
+
+#: includes/class-admin.php:206
+msgid "Beta Releases"
+msgstr ""
+
+#: includes/class-admin.php:207
+msgid "Beta releases contain experimental functionality for testing purposes only. This channel will also include RC and stable releases if more current."
+msgstr ""
+
+#: includes/class-admin.php:211
+msgid "Release Candidates"
+msgstr ""
+
+#: includes/class-admin.php:212
+msgid "Release candidates are released to ensure any critical problems have not gone undetected. This channel will also include stable releases if more current."
+msgstr ""
+
+#: includes/class-admin.php:216
+msgid "Stable Releases"
+msgstr ""
+
+#: includes/class-admin.php:217
+msgid "This is the default behavior in WordPress."
+msgstr ""
+
+#: includes/class-admin.php:221
+msgid "Update Channel"
+msgstr ""
+
+#. translators: %s placeholder is relative time since last update.
+#: includes/class-admin.php:229
+msgid "Last updated %s ago"
+msgstr ""
+
+#: includes/class-admin.php:252, includes/class-admin.php:252
+msgid "WP Job Manager Beta Tester"
+msgstr ""
+
+#: includes/class-updater.php:76
+msgid "<h1><span>&#9888;</span>This is a pre-release version and should only be used on non-production sites<span>&#9888;</span></h1>"
+msgstr ""
+
+#: includes/class-updater.php:87
+msgid "Read the changelog and find out more about the release on GitHub."
+msgstr ""
+
+#: includes/class-updater.php:106
+msgid "Manage job listings from the WordPress admin panel, and allow users to post job listings directly to your site."
+msgstr ""
+
+#: includes/views/html-beta-settings.php:14
+msgid "Settings Saved"
+msgstr ""
+
+#. translators: placeholder is the version that was just switched to.
+#: includes/views/html-beta-settings.php:22
+msgid "<strong>WP Job Manager</strong> was successfully switched to version <strong>%s</strong>."
+msgstr ""
+
+#. translators: %1$s is the version that was being switched to; %2$s is the error message that was passed back.
+#: includes/views/html-beta-settings.php:28
+msgid "An error occurred while switching <strong>WP Job Manager</strong> to version <strong>%1$s</strong>: %2$s"
+msgstr ""
+
+#. translators: placeholder is version of WP Job Manager currently installed.
+#: includes/views/html-beta-settings.php:47
+msgid "You currently have <strong>WP Job Manager %s</strong> installed."
+msgstr ""
+
+#: includes/views/html-beta-settings.php:51
+msgid "Please report any issues you encounter in pre-release versions of WP Job Manager to the GitHub repository."
+msgstr ""
+
+#: includes/views/html-beta-settings.php:59
+msgid "Release Information"
+msgstr ""
+
+#. translators: accessibility text
+#. translators: accessibility text
+#. translators: accessibility text
+#: includes/views/html-beta-settings.php:61, includes/views/html-beta-settings.php:70, includes/views/html-beta-settings.php:78
+msgid "(opens in a new tab)"
+msgstr ""
+
+#: includes/views/html-beta-settings.php:68
+msgid "View Changelog"
+msgstr ""
+
+#: includes/views/html-beta-settings.php:76
+msgid "Report Issue"
+msgstr ""
+
+#: includes/views/html-beta-settings.php:101
+msgid "Switch WP Job Manager Version"
+msgstr ""
+
+#: includes/views/html-beta-settings.php:103
+msgid "Are you sure you want to switch your WP Job Manager version? We do not recommend doing this on production sites. Back up first."
+msgstr ""
+
+#: includes/views/html-beta-settings.php:106
+msgid "Use this to manually switch to a particular version of WP Job Manager."
+msgstr ""
+
+#: includes/views/html-beta-settings.php:119
+msgid "Switch Version"
+msgstr ""
