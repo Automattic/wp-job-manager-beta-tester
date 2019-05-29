@@ -3,7 +3,7 @@
  * Plugin Name: WP Job Manager Beta Tester
  * Plugin URI: https://wpjobmanager.com/
  * Description: Help us test upcoming versions of WP Job Manager. Warning: Do not use on production sites!
- * Version: 1.0.0-dev
+ * Version: 1.0.0
  * Tested up to: 5.0
  * Requires PHP: 5.6
  * Author: Automattic
@@ -18,7 +18,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'WP_JOB_MANAGER_BETA_TESTER_VERSION', '1.0.0-dev' );
+define( 'WP_JOB_MANAGER_BETA_TESTER_VERSION', '1.0.0' );
 define( 'WP_JOB_MANAGER_BETA_TESTER_PLUGIN_FILE', __FILE__ );
 define( 'WP_JOB_MANAGER_BETA_TESTER_PLUGIN_BASENAME', plugin_basename( __FILE__ ) );
 
