@@ -60,8 +60,18 @@ final class Updater extends Abstract_Updater {
 	 * @return string
 	 */
 	public function get_current_version() {
-		if ( defined( 'JOB_MANAGER_VERSION' ) ) {
-			return JOB_MANAGER_VERSION;
+		if ( ! defined( 'JOB_MANAGER_PLUGIN_BASENAME' ) ) {
+			return false;
+		}
+
+		if ( ! function_exists( 'get_plugins' ) ) {
+			require_once ABSPATH . 'wp-admin/includes/plugin.php';
+		}
+
+		$all_plugins = get_plugins();
+
+		if ( isset( $all_plugins[ JOB_MANAGER_PLUGIN_BASENAME ] ) ) {
+			return $all_plugins[ JOB_MANAGER_PLUGIN_BASENAME ]['Version'];
 		}
 
 		return false;
