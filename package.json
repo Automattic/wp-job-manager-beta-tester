@@ -37,7 +37,7 @@
     "fs-extra": "7.0.1",
     "gulp": "4.0.1",
     "gulp-babel": "8.0.0",
-    "gulp-checktextdomain": "2.2.0",
+    "gulp-checktextdomain": "2.2.1",
     "gulp-chmod": "2.0.0",
     "gulp-minify-css": "1.2.4",
     "gulp-phpunit": "0.26.0",
