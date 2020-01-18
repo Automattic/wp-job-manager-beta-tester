@@ -25,8 +25,8 @@
   "homepage": "https://github.com/Automattic/wp-job-manager-beta-tester#readme",
   "devDependencies": {
     "@babel/core": "7.4.3",
-    "@wordpress/babel-preset-default": "4.1.0",
-    "@wordpress/jest-preset-default": "4.0.0",
+    "@wordpress/babel-preset-default": "4.9.0",
+    "@wordpress/jest-preset-default": "4.3.0",
     "babel-core": "6.26.3",
     "babel-eslint": "10.0.1",
     "babel-loader": "8.0.5",
