@@ -8,7 +8,7 @@
         "dealerdirect/phpcodesniffer-composer-installer": "0.5.0",
         "wp-coding-standards/wpcs": "1.2.1",
         "bjornjohansen/wp-pre-commit-hook": "0.3.0",
-        "phpunit/phpunit": "7.5.9",
+        "phpunit/phpunit": "8.5.2",
         "10up/wp_mock": "0.4.2"
     }
 }
