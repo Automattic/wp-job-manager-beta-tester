@@ -4,11 +4,8 @@
   "description": "WP Job Manager Beta Tester",
   "main": "gulpfile.js",
   "scripts": {
-    "build": "gulp && cross-env BABEL_ENV=default webpack --mode=production",
-    "dev": "gulp && cross-env BABEL_ENV=default webpack --mode=development --watch",
-    "test": "npm run test-php && npm run test-js",
-    "test-php": "gulp test",
-    "test-js": "jest"
+    "package": "gulp package",
+    "test": "phpunit"
   },
   "repository": {
     "type": "git",
@@ -24,36 +21,12 @@
   },
   "homepage": "https://github.com/Automattic/wp-job-manager-beta-tester#readme",
   "devDependencies": {
-    "@babel/core": "7.4.3",
-    "@wordpress/babel-preset-default": "4.1.0",
-    "@wordpress/jest-preset-default": "4.0.0",
-    "babel-core": "6.26.3",
-    "babel-eslint": "10.0.1",
-    "babel-loader": "8.0.5",
-    "cross-env": "5.2.0",
-    "css-loader": "2.1.1",
-    "del": "3.0.0",
-    "eslint-plugin-react": "7.12.4",
-    "fs-extra": "7.0.1",
-    "gulp": "4.0.1",
-    "gulp-babel": "8.0.0",
-    "gulp-checktextdomain": "2.2.0",
-    "gulp-chmod": "2.0.0",
-    "gulp-minify-css": "1.2.4",
-    "gulp-phpunit": "0.26.0",
-    "gulp-rename": "1.4.0",
-    "gulp-sass": "4.0.2",
+    "del": "5.1.0",
+    "gulp": "4.0.2",
+    "gulp-checktextdomain": "2.2.1",
+    "gulp-rename": "2.0.0",
     "gulp-sort": "2.0.0",
-    "gulp-uglify": "3.0.2",
-    "gulp-wp-pot": "2.3.5",
-    "gulp-zip": "4.2.0",
-    "jest": "23.6.0",
-    "mini-css-extract-plugin": "0.6.0",
-    "node-sass": "4.12.0",
-    "orchestrator": "0.3.8",
-    "sass-loader": "7.1.0",
-    "style-loader": "0.23.1",
-    "webpack": "4.30.0",
-    "webpack-cli": "3.3.1"
+    "gulp-wp-pot": "2.3.6",
+    "gulp-zip": "5.0.1"
   }
 }

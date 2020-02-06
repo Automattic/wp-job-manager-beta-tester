@@ -10,13 +10,9 @@
  * 3) Run gulp to minify javascript and css using the 'gulp' command.
  */
 
-var babel           = require( 'gulp-babel' );
 var checktextdomain = require( 'gulp-checktextdomain' );
-var chmod           = require( 'gulp-chmod' );
 var del             = require( 'del' );
 var gulp            = require( 'gulp' );
-var phpunit         = require( 'gulp-phpunit' );
-var rename          = require( 'gulp-rename' );
 var sort            = require( 'gulp-sort' );
 var wpPot           = require( 'gulp-wp-pot' );
 var zip             = require( 'gulp-zip' );
@@ -42,9 +38,6 @@ var paths = {
 
 gulp.task( 'clean', gulp.series( function( cb ) {
 	return del( [
-		'assets/js/**/*.min.js',
-		'assets/js/**/*.min.js',
-		'assets/css/**/*.min.css',
 		'build'
 	], cb );
 } ) );
@@ -86,8 +79,7 @@ gulp.task( 'test', function() {
 		.pipe( phpunit() );
 } );
 
-gulp.task( 'build', gulp.series( 'test', 'clean' ) );
-gulp.task( 'build-unsafe', gulp.series( 'clean' ) );
+gulp.task( 'build', gulp.series( 'clean' ) );
 
 gulp.task( 'copy-package', function() {
 	return gulp.src( paths.packageContents, { base: '.' } )
@@ -101,6 +93,5 @@ gulp.task( 'zip-package', function() {
 } );
 
 gulp.task( 'package', gulp.series( 'build', 'copy-package', 'zip-package' ) );
-gulp.task( 'package-unsafe', gulp.series( 'build-unsafe', 'copy-package', 'zip-package' ) );
 
 gulp.task( 'default', gulp.series( 'build' ) );
