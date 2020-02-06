@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
-<ruleset name="WP Job Manager"
+<ruleset name="WP Job Manager Beta"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:noNamespaceSchemaLocation="vendor/squizlabs/php_codesniffer/phpcs.xsd">
 
-	<description>A custom set of code standard rules to check for WP Job Manager Beta Tester plugin.</description>
+	<description>A custom set of code standard rules to check for WP Job Manager Beta plugin.</description>
 
 	<!-- For help in understanding this file: https://github.com/squizlabs/PHP_CodeSniffer/wiki/Annotated-ruleset.xml -->
 	<!-- For help in using PHPCS: https://github.com/squizlabs/PHP_CodeSniffer/wiki/Usage -->
@@ -41,9 +41,14 @@
 		<exclude-pattern>tests/*</exclude-pattern>
 	</rule>
 
-	<rule ref="WordPress.WP">
-		<exclude-pattern>tests/*</exclude-pattern>
-	</rule>
+	<rule ref="WordPress">
+        <exclude name="Generic.Arrays.DisallowShortArraySyntax"/>
+    </rule>
+	<rule ref="WordPress-Docs" />
+	<rule ref="WordPress-Extra" />
+
+	<rule ref="WordPress.Security.ValidatedSanitizedInput" />
+	<rule ref="WordPress.DB.DirectDatabaseQuery" />
 
 	<rule ref="Generic.Arrays.DisallowLongArraySyntax">
 		<exclude-pattern>/wp-job-manager-beta-tester.php</exclude-pattern>
@@ -53,22 +58,13 @@
 		<include-pattern>/wp-job-manager-beta-tester.php</include-pattern>
 	</rule>
 
-	<!-- For help in understanding this testVersion:
-		https://github.com/PHPCompatibility/PHPCompatibility#sniffing-your-code-for-compatibility-with-specific-php-versions -->
 	<config name="testVersion" value="5.6-"/>
-
-	<!-- Rules: WordPress Coding Standards - see
-		https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards -->
-	<rule ref="WordPress-Extra"/><!-- Includes WordPress-Core -->
-	<rule ref="WordPress-Docs"/>
-	<!-- For help in understanding these custom sniff properties:
-		https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/wiki/Customizable-sniff-properties -->
-	<config name="minimum_supported_wp_version" value="4.7"/>
+	<config name="minimum_supported_wp_version" value="4.9"/>
 
 	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
 		<properties>
 			<property name="prefixes" type="array">
-				<element value="wp_job_manager_beta"/>
+				<element value="wp_job_manager_beta_tester"/>
 			</property>
 		</properties>
 	</rule>

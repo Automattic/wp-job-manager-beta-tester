@@ -162,6 +162,7 @@ class Test_Abstract_Updater extends Base_Test {
 		uksort(
 			$releases,
 			function ( $a, $b ) {
+				// phpcs:ignore WordPress.WP.AlternativeFunctions.rand_mt_rand -- Just a test.
 				return mt_rand( -10, 10 );
 			}
 		);
