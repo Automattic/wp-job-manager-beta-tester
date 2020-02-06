@@ -5,7 +5,7 @@
     "license": "GPLv2",
     "require-dev": {
         "phpcompatibility/phpcompatibility-wp": "2.0.0",
-        "dealerdirect/phpcodesniffer-composer-installer": "0.5.0",
+        "dealerdirect/phpcodesniffer-composer-installer": "0.6.2",
         "wp-coding-standards/wpcs": "1.2.1",
         "bjornjohansen/wp-pre-commit-hook": "0.3.0",
         "phpunit/phpunit": "7.5.9",
