@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/Automattic/wp-job-manager-beta-tester#readme",
   "devDependencies": {
-    "del": "5.1.0",
+    "del": "6.0.0",
     "gulp": "4.0.2",
     "gulp-checktextdomain": "2.2.1",
     "gulp-rename": "2.0.0",
