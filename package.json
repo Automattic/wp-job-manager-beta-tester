@@ -27,6 +27,6 @@
     "gulp-rename": "2.0.0",
     "gulp-sort": "2.0.0",
     "gulp-wp-pot": "2.3.6",
-    "gulp-zip": "5.0.1"
+    "gulp-zip": "5.1.0"
   }
 }
